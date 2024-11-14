@@ -1,0 +1,21 @@
+HTML Tags used:
+img
+div
+a
+p
+h1
+li
+ul
+script
+h5
+small
+
+CSS Properties used:
+width
+height
+border-radius
+object-position
+object-fit
+
+Javascript/Bootstrap description: I used Bootstrap for essentially the entire website, specifically the Album template for the 3 child pages, the Heros template for all 4 pages including the home page, and the Header template. I kepy the Javascript pretty simple;
+On the Bojack page, the "Ruthie" card had a spoiler alert and I converted that into a button that when pressed will reveal the text containing the spoilers. 

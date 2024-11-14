@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote for {{ quote.symbol }}
+{% endblock %}
+
+{% block main %}
+    <div >
+        <p><b>Symbol</b>: {{ quote.symbol }}</p>
+        <p><b>Company Name</b>: {{ quote.name }} </p>
+        <p><b>Stock Price</b>: {{ quote.price | usd }}</p>
+        <form action="/quote" method="GET">
+            <button class="btn btn-primary" type="submit">Look Up Another Quote</button>
+        </form>
+    </div>
+{% endblock %}

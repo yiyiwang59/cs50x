@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Stock</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Current Stock Price</th>
+                <th scope="col">Total Value</th>
+            </tr>
+        </thead>
+        {% for stock in stock_data %}
+        <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.shares }}</td>
+                <td>{{ stock.quote | usd }}</td>
+                <td>{{ stock.total_value | usd }}</td>
+
+        </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td><b>Balance: </b></td>
+            <td>{{ balance | usd }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><b>Grand Total: </b></td>
+            <td>{{ grand_value | usd }}</td>
+        </tr>
+    </table>
+{% endblock %}

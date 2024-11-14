@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+            const resultText = document.createElement('p');
+            document.querySelectorAll('#section1 button').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    const clickedButton = event.target;
+                    const isCorrect = clickedButton.id === "loml";
+                    if (isCorrect) {
+                        clickedButton.style.backgroundColor = 'green';
+                        resultText.textContent = 'Correct';
+                    } else {
+                        clickedButton.style.backgroundColor = 'red';
+                        resultText.textContent = 'Incorrect';
+                    }
+                    clickedButton.parentElement.appendChild(resultTextchoice);
+                });
+            });
+            const submitButton = document.getElementById('submit');
+            submitButton.addEventListener('click', function() {
+            const answerText = document.getElementById('answer');
+            if (answerText.value === '4') {
+                answerText.style.backgroundColor = 'green';
+                resultText.textContent = 'Correct';
+            } else {
+                answerText.style.backgroundColor = 'red';
+                resultText.textContent = 'Incorrect';
+            }
+            answerText.parentElement.appendChild(resultText);
+        });
+        });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section" id="section1">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which of the following is NOT a Taylor Swift Track 5?</h3>
+                <button type="button" id="atw">All Too Well</button>
+                <button type="button" id="yoyok" >You're on Your Own Kid</button>
+                <button type="button" id="ta">The Archer</button>
+                <button type="button" id="loml">loml</button>
+                <button type="button" id="ti">tolerate it</button>
+            </div>
+
+            <div class="section" id='section2'>
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>How many times has Taylor Swift won Album of the Year?</h3>
+                 <input type="text" id='answer'>
+                 <button type="button" id='submit'><b>Submit</b></button>
+            </div>
+        </div>
+    </body>
+</html>

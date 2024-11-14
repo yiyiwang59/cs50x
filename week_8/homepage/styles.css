@@ -1,0 +1,29 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+.home_thumbnail {
+    width: 200px;
+    height: 250px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.album_thumbnail {
+    width: 420px;
+    height: 235px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.music_thumbnail {
+    width: 638px;
+    height: 350px;
+    object-position: center;
+    object-fit: cover;
+}
+
+#spoilerText {
+    display: none;
+}

@@ -1,0 +1,10 @@
+Taking into account their average valence, danceability, energy of someone's top 100 songs,
+one can try to infer very simple auras based mostly whether a person gravitates towards more
+positive, more upbeat (high valence, danceability, energy) music or
+meloncholy, slower vibes (lower valence, danceability, energy).
+
+These metrics are very hard to really pinpoint any more specific auras than on a lateral spectrum,
+one metric that I would add into the evaluation is an analysis on the actual lyrics of the music
+the listener is listening to. Many upbeat, danceable songs actually have quite sad lyrics, so the
+overall feel of the song may not reflect that actual emotions the listener is getting from the song.
+

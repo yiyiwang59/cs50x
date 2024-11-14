@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: sort1 random 50k - 5.85s, sorted 50k .604s, reversed 50k 5.602 - takes longer for random/reversed, but best case(sorted), much quicker
+
+sort2 uses: merge sort
+
+How do you know?: reversed 50k - .817s, random 50k - .582, sorted 50k - .524 - shortest all around
+
+sort3 uses: selection sort
+
+How do you know?: reversed 50k - 2.583, sorted 50k - 2.381, random 50k - 2.354 s - takes around the same all around, sorted does not make a difference, slower than merged sort
